@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="5165" started-at="2018-04-15T05:28:43Z" finished-at="2018-04-15T05:28:48Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="5165" started-at="2018-04-15T05:28:43Z" finished-at="2018-04-15T05:28:48Z">
+      <class name="GetRequest.GetData">
+        <test-method status="PASS" signature="testBody()[pri:0, instance:GetRequest.GetData@32d992b2]" name="testBody" duration-ms="2410" started-at="2018-04-15T10:58:43Z" finished-at="2018-04-15T10:58:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBody -->
+        <test-method status="PASS" signature="testResponseCode()[pri:0, instance:GetRequest.GetData@32d992b2]" name="testResponseCode" duration-ms="326" started-at="2018-04-15T10:58:46Z" finished-at="2018-04-15T10:58:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testResponseCode -->
+        <test-method status="PASS" signature="testcityname()[pri:0, instance:GetRequest.GetData@32d992b2]" name="testcityname" duration-ms="1639" started-at="2018-04-15T10:58:46Z" finished-at="2018-04-15T10:58:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcityname -->
+        <test-method status="PASS" signature="testid()[pri:0, instance:GetRequest.GetData@32d992b2]" name="testid" duration-ms="378" started-at="2018-04-15T10:58:48Z" finished-at="2018-04-15T10:58:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testid -->
+        <test-method status="PASS" signature="testsys()[pri:0, instance:GetRequest.GetData@32d992b2]" name="testsys" duration-ms="351" started-at="2018-04-15T10:58:48Z" finished-at="2018-04-15T10:58:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testsys -->
+      </class> <!-- GetRequest.GetData -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
