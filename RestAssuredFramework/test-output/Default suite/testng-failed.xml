@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="PostRequest.postexample">
+      <class name="PutRequest.putexample">
         <methods>
           <include name="testPost"/>
         </methods>
-      </class> <!-- PostRequest.postexample -->
+      </class> <!-- PutRequest.putexample -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

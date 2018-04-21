@@ -1,4 +1,4 @@
-package PostRequest;
+package PutRequest;
 
 import org.json.simple.JSONObject;
 import org.testng.Assert;
@@ -8,10 +8,9 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
-public class postexample {
+public class putexample {
 
-	
-	//POST is to create a new resource
+	// PUT request is to update 
 	@Test
 	public void testPost()
 	{
@@ -19,17 +18,17 @@ public class postexample {
 	  
 	  request.header("Content-Type","application/json");
 	  JSONObject json = new JSONObject();
-	  json.put("id","0122");
-	  json.put("title", "ravi");
-	  json.put("author", "kolte");
+	 
+	  json.put("title", "ravikkkkq");
+	  json.put("author", "koltekkkkq");
 	  
 	  request.body(json.toJSONString());
 	  
-	  Response response = request.post("http://localhost:3000/posts/");
+	  Response response = request.put("http://localhost:3000/posts/0122");
 	  
 	  int statuscode = response.getStatusCode();
 	  
-	  Assert.assertEquals(statuscode,201);
+	  Assert.assertEquals(statuscode,200);
 	  
 	}
 }

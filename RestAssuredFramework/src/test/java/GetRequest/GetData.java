@@ -11,6 +11,7 @@ import io.restassured.response.Response;
 
 public class GetData {
 
+	// GET is to send the request
 	@Test
 	public void testResponseCode()
 	{
