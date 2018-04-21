@@ -1,5 +1,7 @@
 package GetRequest;
 
+import java.util.ArrayList;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -56,6 +58,19 @@ public class GetData {
 	  System.out.println("Sys Id is "+sys);
 	  Assert.assertEquals(sys,1);
 	  
+	}
+	
+	@Test
+	public void GetWeather()
+	{
+	  Response resp = RestAssured.get("http://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b6907d289e10d714a6e88b30761fae22");
+	  ArrayList<Object> a = resp.jsonPath().get("weather.description");
+	   for(Object o : a)
+	   {
+		   System.out.println(o);
+		   Assert.assertEquals("light intensity drizzle", o);
+	   }
+	 
 	}
 	
 }
