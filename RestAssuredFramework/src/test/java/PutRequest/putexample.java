@@ -23,6 +23,8 @@ public class putexample {
 	  json.put("author", "koltekkkkq");
 	  
 	  
+	  
+	  
 	  request.body(json.toJSONString());
 	  
 	  Response response = request.put("http://localhost:3000/posts/0122");
